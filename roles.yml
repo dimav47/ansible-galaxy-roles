@@ -1,0 +1,13 @@
+---
+- name: build server configuration
+  hosts: build
+  become: yes
+
+  roles:
+    - build
+- name: webapps server
+  hosts: web
+  become: yes
+
+  roles:
+    - web
