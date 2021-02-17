@@ -1,7 +1,9 @@
 ---
 # tasks file for build
 - name: install build packages
-  apt: name={{item}} state=present
+  apt: 
+    name: "{{ item }}" 
+    state: present
   with_items:
     - default-jdk
     - tomcat9

@@ -1,7 +1,5 @@
 ---
 # defaults file for web
- - name: Ensure webapp is move it
-    synchronize:
-      src: /home/boxfuse/target/hello-1.0.war
-      dest: /var/lib/tomcat9/webapps
+ - name: Ensure webapp is move it 
+    dest_folder: /var/lib/tomcat9/webapps
     delegate_to: 34.69.3.31
