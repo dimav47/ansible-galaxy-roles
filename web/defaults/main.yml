@@ -1,5 +1,4 @@
 ---
 # defaults file for web
- - name: Ensure webapp is move it
-   src_path: /home/boxfuse/target
-   dest_folder: /var/lib/tomcat9/webapps
+ src_path: /home/boxfuse/target
+ dest_folder: /var/lib/tomcat9/webapps
