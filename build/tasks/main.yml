@@ -9,3 +9,12 @@
     - tomcat9
     - git
     - maven
+
+- name: Ensure boxfuse-sample-java-war-hello is present
+    git:
+      repo: "{{ app_repo }}"
+      dest: "{{ dest_path}}"
+      clone: yes
+      
+- name: package boxfuse
+    command: mvn -f /home/boxfuse-sample-java-war-hello/pom.xml clean package
