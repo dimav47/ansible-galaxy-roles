@@ -9,7 +9,7 @@
     - tomcat9
 
 - name: Ensure tomcat started
-    apt:
+  apt:
       name: tomcat9
       state: started
 
