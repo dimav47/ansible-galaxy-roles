@@ -17,4 +17,4 @@
     clone: yes
 
 - name: package boxfuse
-  command: mvn -f /home/boxfuse-sample-java-war-hello/pom.xml clean package
+  command: "mvn -f {{ dest_path }}/pom.xml clean package"
