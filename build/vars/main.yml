@@ -2,8 +2,8 @@
 # vars file for build
 - name: Ensure boxfuse-sample-java-war-hello is present
     git:
-      repo: 'https://github.com/boxfuse/boxfuse-sample-java-war-hello.git'
-      dest: /home/boxfuse-sample-java-war-hello
+      repo: "{{ app_repo }}"
+      dest: "{{ dest_path}}"
       clone: yes
 - name: package boxfuse
     command: mvn -f /home/boxfuse-sample-java-war-hello/pom.xml clean package
