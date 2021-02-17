@@ -8,11 +8,6 @@
     - default-jre
     - tomcat9
 
-- name: Ensure tomcat started
-  apt:
-      name: tomcat9
-      state: started
-
 - name: Ensure hello-1.0.war is present
   copy:
     src: "{{ src_path }}/hello-1.0.war"
